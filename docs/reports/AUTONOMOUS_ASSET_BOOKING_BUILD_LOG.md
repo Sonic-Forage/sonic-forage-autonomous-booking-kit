@@ -17,20 +17,23 @@ Status: `closed_until_human_yes`
 - Updated the GitHub Pages copy to surface the attachment checklist.
 - Updated `scripts/verify.py` so future runs require the checklist.
 
-### Links
+### Links and commits
 
 - Booking kit repo: https://github.com/Sonic-Forage/sonic-forage-autonomous-booking-kit
 - Asset vault repo: https://github.com/Sonic-Forage/sonic-forage-asset-vault
+- Booking-kit feature commit: `316ef432d98c5c582c79ed71d1e3a15c8c561063`
+- Asset-vault build-log commit: `67be34d2073d857c362f419faee0ae604d8d201f`
 - New checklist: `docs/booking/ASSET_ATTACHMENT_APPROVAL_CHECKLIST.md`
 - Updated payload: `framework/payloads/booking-campaign.payload.example.json`
 
-### Checks to run for this increment
+### Checks run
 
 ```bash
-python3 scripts/verify.py
-python3 -m py_compile scripts/*.py
-# plus the same two commands in ../sonic-forage-asset-vault
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify.py
+PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile scripts/*.py
 git diff --check
+# plus the same commands in ../sonic-forage-asset-vault
+# changed-file secret scan OK in both repos; verifier regex literals excluded
 ```
 
 ### Safety / cost ledger
