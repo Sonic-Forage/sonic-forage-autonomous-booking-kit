@@ -1,0 +1,21 @@
+{
+  "schema": "sonic-forage.booking-lead.v0.1",
+  "status": "example_only",
+  "lead_name": "Example Community Arts Space",
+  "lead_type": "venue_or_community",
+  "public_url": "https://example.invalid",
+  "contact_policy": "unknown_research_only",
+  "fit_tags": [
+    "community",
+    "creative-tech",
+    "rave-culture"
+  ],
+  "default_gate": "closed_until_human_yes",
+  "blocked_without_approval": [
+    "email_send",
+    "dm_send",
+    "calendar_invite",
+    "fee_quote",
+    "public_announcement"
+  ]
+}

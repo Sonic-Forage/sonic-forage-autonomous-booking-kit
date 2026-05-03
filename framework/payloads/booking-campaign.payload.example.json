@@ -1,0 +1,15 @@
+{
+  "schema": "sonic-forage.booking-campaign.v0.1",
+  "status": "draft_only",
+  "campaign_name": "Example Sonic Forage Demo Booking Lane",
+  "asset_vault": "https://github.com/Sonic-Forage/sonic-forage-asset-vault",
+  "max_leads_before_review": 10,
+  "send_mode": "never_send_without_human_approval",
+  "required_human_inputs": [
+    "target",
+    "copy",
+    "attachments",
+    "timing",
+    "risk_notes"
+  ]
+}

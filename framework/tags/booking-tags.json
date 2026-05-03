@@ -1,0 +1,15 @@
+{
+  "schema": "sonic-forage.booking-tags.v0.1",
+  "tags": [
+    "booking-agent",
+    "research-only",
+    "draft-only",
+    "closed-gate",
+    "human-approval-required",
+    "asset-kit",
+    "do-not-contact",
+    "warm-intro",
+    "venue-fit",
+    "festival-fit"
+  ]
+}

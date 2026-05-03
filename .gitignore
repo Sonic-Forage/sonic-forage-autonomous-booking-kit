@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+*.log
+# Raw media stays out of git unless explicitly approved and tiny/sanitized.
+assets/tracks/raw/
+assets/video/raw/
+outputs/
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.mp4
+*.mov
+*.webm
+!assets/audio-preview/README.md
