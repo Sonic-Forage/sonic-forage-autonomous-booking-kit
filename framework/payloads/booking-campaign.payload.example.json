@@ -5,6 +5,12 @@
   "asset_vault": "https://github.com/Sonic-Forage/sonic-forage-asset-vault",
   "max_leads_before_review": 10,
   "send_mode": "never_send_without_human_approval",
+  "asset_attachment_policy": "closed_until_human_yes",
+  "selected_public_asset_paths": [],
+  "raw_media_attachment_allowed": false,
+  "private_media_link_allowed": false,
+  "payment_link_allowed": false,
+  "requires_human_approval": true,
   "required_human_inputs": [
     "target",
     "copy",

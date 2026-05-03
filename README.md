@@ -18,6 +18,7 @@ This is **not** an unsupervised spam bot. It prepares booking assets, CRM-style 
 - `docs/booking/AUTONOMOUS_BOOKING_AGENT_PLAN.md`
 - `docs/booking/HUMAN_APPROVAL_LEDGER.md`
 - `docs/booking/BOOKING_ONE_SHEET_TEMPLATE.md`
+- `docs/booking/ASSET_ATTACHMENT_APPROVAL_CHECKLIST.md`
 - `framework/prompts/booking-agent-prompts.md`
 - `framework/payloads/booking-lead.payload.example.json`
 - `framework/payloads/booking-campaign.payload.example.json`
