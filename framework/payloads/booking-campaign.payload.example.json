@@ -6,7 +6,12 @@
   "max_leads_before_review": 10,
   "send_mode": "never_send_without_human_approval",
   "asset_attachment_policy": "closed_until_human_yes",
-  "selected_public_asset_paths": [],
+  "selected_public_asset_paths": [
+    "assets/images/promo/asset-vault-square-promo.png",
+    "assets/images/banners/sonic-forage-community-framework-banner.png",
+    "assets/images/banners/autonomous-booking-agent-banner.png"
+  ],
+  "one_sheet_draft_example": "docs/booking/BOOKING_ONE_SHEET_DRAFT_EXAMPLE.md",
   "raw_media_attachment_allowed": false,
   "private_media_link_allowed": false,
   "payment_link_allowed": false,
