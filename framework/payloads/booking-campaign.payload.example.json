@@ -3,6 +3,7 @@
   "status": "draft_only",
   "campaign_name": "Example Sonic Forage Demo Booking Lane",
   "asset_vault": "https://github.com/Sonic-Forage/sonic-forage-asset-vault",
+  "asset_vault_public_promo_selector": "asset-library/public-promo-selection-manifest.json",
   "max_leads_before_review": 10,
   "send_mode": "never_send_without_human_approval",
   "asset_attachment_policy": "closed_until_human_yes",

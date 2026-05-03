@@ -29,6 +29,8 @@ for asset_path in campaign['selected_public_asset_paths']:
         print('RAW MEDIA PATH IN CAMPAIGN ASSET LIST', asset_path); sys.exit(1)
 if campaign.get('one_sheet_draft_example') != 'docs/booking/BOOKING_ONE_SHEET_DRAFT_EXAMPLE.md':
     print('MISSING ONE-SHEET DRAFT EXAMPLE POINTER'); sys.exit(1)
+if campaign.get('asset_vault_public_promo_selector') != 'asset-library/public-promo-selection-manifest.json':
+    print('MISSING PUBLIC PROMO SELECTOR POINTER'); sys.exit(1)
 text='\n'.join((ROOT/p).read_text(errors='replace') for p in required)
 for needle in ['closed_until_human_yes','Do not send','human approval','not autonomous spam','Asset vault']:
     if needle.lower() not in text.lower(): print('MISSING NEEDLE', needle); sys.exit(1)

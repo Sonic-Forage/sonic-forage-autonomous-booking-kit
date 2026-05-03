@@ -12,6 +12,7 @@ Use the public asset vault as an index and one-sheet source only:
 
 - Canonical asset vault: https://github.com/Sonic-Forage/sonic-forage-asset-vault
 - Public-safe promo catalog: `asset-library/promo-asset-catalog.json`
+- Public promo selector manifest: `asset-library/public-promo-selection-manifest.json`
 - Raw-media storage policy: `docs/media/MEDIA_STORAGE_POLICY.md`
 - Release approval checklist: `docs/media/RELEASE_APPROVAL_CHECKLIST.md`
 
