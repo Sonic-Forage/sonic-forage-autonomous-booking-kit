@@ -100,3 +100,51 @@ git diff --check
 1. Add a small JSON schema check for the fail-closed campaign payload fields.
 2. Add a public-safe promo asset selector manifest in the asset vault that references only committed images.
 3. Keep all sends, attachments, public release, payments, and private media sharing blocked until human approval.
+
+## 2026-05-03T10:38:29Z — public promo selector linkage
+
+Status: `closed_until_human_yes`
+
+### Scope
+
+- Inspected status and pulled `main` with `git pull --ff-only` in both repos.
+- Linked the booking campaign payload to the asset-vault `asset-library/public-promo-selection-manifest.json` selector.
+- Updated the attachment approval checklist and GitHub Pages copy so operators can find the selector before drafting one-sheets.
+- Updated `scripts/verify.py` to require the selector pointer while keeping all fail-closed campaign fields asserted.
+- No booking outreach, attachments, calendar invites, payment links, public posts, or private media sharing occurred.
+
+### Links and commits
+
+- Booking kit repo: https://github.com/Sonic-Forage/sonic-forage-autonomous-booking-kit
+- Asset vault repo: https://github.com/Sonic-Forage/sonic-forage-asset-vault
+- Booking-kit feature commit: `f093395232d5956bdbadc7e3563cfda9f389b0d5`
+- Asset-vault feature commit: `c287f81298ea155ec929150e9e358a1678332893`
+- Updated campaign payload: `framework/payloads/booking-campaign.payload.example.json`
+- Asset selector: `asset-library/public-promo-selection-manifest.json` in the asset-vault repo
+
+### Checks run
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/verify.py
+PYTHONDONTWRITEBYTECODE=1 python3 -m py_compile scripts/*.py
+git diff --check
+# plus the same commands in ../sonic-forage-asset-vault
+# changed-file secret scan OK in both repos; verifier regex literals excluded
+```
+
+### Safety / cost ledger
+
+- External outreach sent: 0
+- DMs/emails/calendar invites sent: 0
+- Payment links created: 0
+- Public posts made: 0
+- Raw media committed: 0
+- Private media uploaded, migrated, deleted, copied, or shared: 0
+- GPU/video jobs started: 0
+- Cron jobs created, edited, removed, or scheduled: 0
+
+### Next safe tasks
+
+1. Add cross-repo verifier coverage that booking-kit public promo asset paths still exist in the asset vault.
+2. Add a compact venue-fit tag map for choosing a promo image by context without exposing raw tracks.
+3. Keep all sends, attachments, public release, payments, and private media sharing blocked until human approval.
